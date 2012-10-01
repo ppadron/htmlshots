@@ -1,0 +1,4 @@
+# Configuration for the htmlshots service
+ENABLED=
+INSTANCES=4
+PORT=3000

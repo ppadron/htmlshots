@@ -1,0 +1,17 @@
+description "HTMLShots Service"
+author      "Pedro Padron"
+
+pre-start script
+    [ ! -f /etc/default/htmlshots ] && { stop; echo 'No config file.'; exit 0; }
+    . /etc/default/htmlshots
+    [ -z "$ENABLED" ] && { stop; exit 0; }
+    if ! [ $INSTANCES -eq $INSTANCES ]; then
+        INSTANCES=2
+    fi
+    if [[ -z "$PORT" ]]; then
+        PORT=3000
+    fi
+    for N in $(seq $PORT `expr $PORT + $INSTANCES - 1`); do
+        start htmlshots-worker LISTEN=$N
+    done
+end script

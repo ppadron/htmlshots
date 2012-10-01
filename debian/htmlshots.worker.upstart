@@ -1,0 +1,13 @@
+description "HTMLShots Service (Worker)"
+author      "Pedro Padron"
+
+env LANG=en_US.UTF-8
+
+start on runlevel 3
+stop  on stopping screenshots-all
+
+instance $LISTEN
+
+respawn limit 10 5
+
+exec /usr/bin/phantomjs /var/lib/htmlshots/fromfile.js $LISTEN >> /var/log/htmlshots.log

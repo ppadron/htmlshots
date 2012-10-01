@@ -1,0 +1,3 @@
+var/lib/htmlshots
+var/log/htmlshots
+etc/htmlshots

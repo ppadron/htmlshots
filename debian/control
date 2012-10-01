@@ -1,0 +1,15 @@
+Source: htmlshots
+Section: web
+Priority: extra
+Maintainer: Pedro Padron <ppadron@w3p.com.br>
+Build-Depends: debhelper
+Standards-Version: 3.8.4
+Vcs-Browser: https://bitbucket.org/w3p/htmlshots
+Vcs-Git: http://bitbucket.org/w3p/htmlshots.git
+
+Package: htmlshots
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, phantomjs (>= 1.6.0)
+Description: HTMLShots is a PhantomJS app that creates screenshots from HTML files.
+ This package provides the HTMLShots application, a service based on PhantomJS to
+ generate screenshots from HTML files.
