@@ -1,3 +1,9 @@
+htmlshots (0.1.2-1) precise; urgency=low
+
+  * [fix] fixing parent service name in worker upstart script.
+
+ -- W3P Packages Team <packages@w3p.com.br>  Mon, 02 Oct 2012 02:23:52 -0300
+
 htmlshots (0.1.1-1) precise; urgency=low
 
   * [fix] HTMLShots worker must use the config file in /etc/htmlshots.
