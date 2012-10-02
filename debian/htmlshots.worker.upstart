@@ -4,7 +4,7 @@ author      "Pedro Padron"
 env LANG=en_US.UTF-8
 
 start on runlevel 3
-stop  on stopping screenshots-all
+stop  on stopping htmlshots
 
 instance $LISTEN
 
