@@ -1,5 +1,5 @@
 description "HTMLShots Service"
-author      "Pedro Padron"
+author      "Pedro Padron <ppadron@w3p.com.br>"
 
 pre-start script
     [ ! -f /etc/default/htmlshots ] && { stop; echo 'No config file.'; exit 0; }

@@ -1,5 +1,5 @@
 description "HTMLShots Service (Worker)"
-author      "Pedro Padron"
+author      "Pedro Padron <ppadron@w3p.com.br>"
 
 env LANG=en_US.UTF-8
 
