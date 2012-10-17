@@ -16,7 +16,7 @@ override_dh_install:
 	mkdir -p debian/htmlshots/var/lib/htmlshots
 	mkdir -p debian/htmlshots/etc/htmlshots
 	mkdir -p debian/htmlshots/etc/init
-	cp fromfile.js debian/htmlshots/var/lib/htmlshots
+	cp htmlshots.js debian/htmlshots/var/lib/htmlshots
 	cp debian/htmlshots.worker.upstart debian/htmlshots/etc/init/htmlshots-worker.conf
-	cp conf/fromfile.json debian/htmlshots/etc/htmlshots
+	cp conf/htmlshots.json debian/htmlshots/etc/htmlshots
 	dh_install

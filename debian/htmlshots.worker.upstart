@@ -10,4 +10,4 @@ instance $LISTEN
 
 respawn limit 10 5
 
-exec /usr/bin/phantomjs --config=/etc/htmlshots/fromfile.json /var/lib/htmlshots/fromfile.js $LISTEN >> /var/log/htmlshots.log
+exec /usr/bin/phantomjs --config=/etc/htmlshots/htmlshots.json /var/lib/htmlshots/htmlshots.js $LISTEN >> /var/log/htmlshots.log
