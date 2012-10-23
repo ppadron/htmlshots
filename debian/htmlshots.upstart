@@ -1,6 +1,9 @@
 description "HTMLShots Service"
 author      "Pedro Padron <ppadron@w3p.com.br>"
 
+start on runlevel[2345]
+respawn
+
 pre-start script
     [ ! -f /etc/default/htmlshots ] && { stop; echo 'No config file.'; exit 0; }
     . /etc/default/htmlshots
