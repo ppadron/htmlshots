@@ -8,6 +8,7 @@ process for each screenshots request.
 ### requirements
 
 * PhantomJS >= 1.6.0
+* ttf-mscorefonts-installer (optional, only if you want Windows fonts)
 
 ### install
 
@@ -30,6 +31,12 @@ By default the **HTMLShots** service is disabled. To enable it, open */etc/defau
 *Note:* **HTMLShots** supports running multiple instances (processes) with the *INSTANCES* parameter in */etc/default/htmlshots*.
 This is particularly useful if you are building a service on top of **HTMLShots** and wants to take advantage of running multiple
 processes.
+
+If you want to build the package by yourself:
+
+    $ git clone https://github.com/w3p/htmlshots
+    $ cd htmlshots
+    $ dpkg-buildpackage -I.git
 
 #### git
 
@@ -67,6 +74,6 @@ Send a POST request with the HTML contents URL-encoded in the *html* parameter.
 
     $ curl -X POST -d html=contents http://localhost:3000/ | base64 -d > screenshot.png
 
-@TODO: Send a POST request with the URL for the desired page in the *url* parameter.
+TODO: Send a POST request with the URL for the desired page in the *url* parameter.
 
     $ curl http://localhost:3000/?url=http://www.google.com/ | base64 -d > screenshot.png

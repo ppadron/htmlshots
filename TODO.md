@@ -1,0 +1,1 @@
+* Allow POST request with the URL for the desired page in the *url* parameter.
