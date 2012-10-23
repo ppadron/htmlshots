@@ -1,0 +1,5 @@
+debian/files
+debian/htmlshots
+debian/*.log
+debian/*.debhelper
+debian/*.substvars
