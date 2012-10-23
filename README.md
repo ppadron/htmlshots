@@ -36,7 +36,7 @@ If you want to build the package by yourself:
 
     $ git clone https://github.com/w3p/htmlshots
     $ cd htmlshots
-    $ dpkg-buildpackage -I.git
+    $ dpkg-buildpackage
 
 #### git
 
