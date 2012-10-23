@@ -29,6 +29,9 @@ var service = server.listen(port, function (request, response) {
         if (status != 'success') {
             send(500, {error: 'Sorry, something wrong happened.'});
         }
+        page.evaluate(function() {
+            document.body.bgColor = 'white';
+        });
         return send(200, page.renderBase64());
     };
     page.content = contents;
