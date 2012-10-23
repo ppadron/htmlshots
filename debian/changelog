@@ -1,13 +1,18 @@
-htmlshots (0.2.0-1) precise; urgency=low
+htmlshots (0.3.0-1) precise; urgency=low
 
-  * renamed fromfile.js to htmlshots.js
-  * there is no need for waitFor() anymore, since we are manually setting page.content now 
+  * there is no need for waitFor() anymore, since we are manually setting page.content now
   * added runlevel and respawn to upstart job
   * added README.md and TODO.md
   * added ttf-mscorefonts-installer dependency for better font rendering
   * setting bgColor to white to prevent screenshots with black blackground
 
- -- W3P Packages Team <packages@w3p.com.br>  Tue, 23 Oct 2012 14:37:43 -0200
+ -- W3P Packages Team <packages@w3p.com.br>  Tue, 23 Oct 2012 14:52:20 -0200
+
+htmlshots (0.2.0-1) precise; urgency=low
+
+  * renamed fromfile.js to htmlshots.js
+
+ -- W3P Packages Team <packages@w3p.com.br>  Tue, Oct 2 02:24:31 2012 -0300
 
 htmlshots (0.1.2-1) precise; urgency=low
 
