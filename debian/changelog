@@ -1,3 +1,13 @@
+htmlshots (0.2.0-1) precise; urgency=low
+
+  * renamed fromfile.js to htmlshots.js
+  * there is no need for waitFor() anymore, since we are manually setting page.content now 
+  * added runlevel and respawn to upstart job
+  * added README.md
+  * added ttf-mscorefonts-installer dependency for better font rendering
+
+ -- W3P Packages Team <packages@w3p.com.br>  Tue, 23 Oct 2012 12:34:46 -0200
+
 htmlshots (0.1.2-1) precise; urgency=low
 
   * [fix] fixing parent service name in worker upstart script.
