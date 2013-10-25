@@ -32,6 +32,19 @@ var service = server.listen(port, function (request, response) {
         page.evaluate(function() {
             document.body.bgColor = 'white';
         });
+
+        if (typeof(request.post.selector) != 'undefined') {
+            var clipRect = page.evaluate(function (selector) {
+                return document.querySelector(selector).getBoundingClientRect();
+            }, request.post.selector);
+            page.clipRect = {
+                top: clipRect.top,
+                left: clipRect.left,
+                width: clipRect.width,
+                height: clipRect.height
+            };
+        }
+
         return send(200, page.renderBase64());
     };
     page.content = contents;
