@@ -1,9 +1,9 @@
 # HTMLShots
 ## yet another phantom.js screenshots app
 
-**HTMLShots** is a simple **phantom.js** app that creates screenshots from *HTML* files. However, **HTMLShots** makes use
-of the `WebServer` module, and unlike other similar screenshot solutions, there is no need to spawn one
-process for each screenshots request.
+**HTMLShots** is a simple **phantom.js** app that creates screenshots from *HTML* files.
+Unlike other similar screenshot solutions, **HTMLShots** makes use of the `WebServer` module
+so there is no need to spawn one process for each screenshots request.
 
 ### requirements
 
