@@ -14,14 +14,14 @@ process for each screenshots request.
 
 #### package
 
-We maintain *amd64* packages for **Ubuntu 12.04 LTS (precise)** in our APT repository:
+We maintain packages for **Ubuntu 12.04 LTS (precise)** in our PPA:
 
-    $ wget -q -O - http://apt.w3p.com.br/pubkey.gpg | sudo apt-key add -
-    $ echo 'deb http://apt.w3p.com.br/ precise main' | sudo tee /etc/apt/sources.list.d/w3p.list
+    $ sudo apt-get install -y python-software-properties
+    $ sudo add-apt-repository ppa:templateria/htmlshots
     $ sudo apt-get update
     $ sudo apt-get install htmlshots
 
-**Note:** Ubuntu 12.04 LTS (precise) ships PhantomJS 1.4.0, so our APT repository provides an updated version (1.6.0),
+**Note:** Ubuntu 12.04 LTS (precise) ships PhantomJS 1.4.0, so our PPA repository provides an updated version (1.6.0),
 backported from Ubuntu 12.10 (quantal).
 
 By default the **HTMLShots** service is disabled. To enable it, open */etc/default/htmlshots* and set ENABLED=1, then:
@@ -34,7 +34,7 @@ processes.
 
 If you want to build the package by yourself:
 
-    $ git clone https://github.com/w3p/htmlshots
+    $ git clone https://github.com/templateria/htmlshots
     $ cd htmlshots
     $ dpkg-buildpackage
 
@@ -42,7 +42,7 @@ If you want to build the package by yourself:
 
 When installing directly from *git*, first make sure you have installed PhantomJS 1.6.0, then:
 
-    $ git clone https://github.com/w3p/htmlshots
+    $ git clone https://github.com/templateria/htmlshots
 
 To run HTMLShots on port 3000 (default):
 
